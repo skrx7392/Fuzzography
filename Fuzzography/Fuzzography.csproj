@@ -33,6 +33,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="KdTreeLib, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NGeoNames.1.3.52\lib\net45\KdTreeLib.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NGeoNames, Version=1.3.52.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NGeoNames.1.3.52\lib\net45\NGeoNames.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -48,6 +56,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="NGeoNames.chm" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="input1.txt" />
+    <Content Include="input2.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
